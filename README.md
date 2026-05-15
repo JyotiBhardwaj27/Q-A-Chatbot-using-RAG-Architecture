@@ -224,7 +224,7 @@ The final system successfully balances:
 
 # 👨‍💻 Author
 
-**[Jyoti Bhardwaj]**
+**Jyoti Bhardwaj**
 
 ---
 
