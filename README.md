@@ -1,64 +1,90 @@
-# Retrieval-Augmented Generation (RAG) Question Answering System
+# 🚀 Retrieval-Augmented Generation (RAG) Question Answering System
 
-A lightweight end-to-end Retrieval-Augmented Generation (RAG) pipeline for open-domain question answering using Wikipedia retrieval, semantic search, and transformer-based language models.
+<p align="center">
 
----
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
 
-## Live Demo
+![Transformers](https://img.shields.io/badge/HuggingFace-Transformers-yellow?style=for-the-badge)
 
-Streamlit Application:
+![FAISS](https://img.shields.io/badge/VectorDB-FAISS-green?style=for-the-badge)
 
-[Launch RAG QA App](YOUR_STREAMLIT_LINK)
+![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red?style=for-the-badge&logo=streamlit)
 
-> Note: The demo is hosted temporarily using Streamlit + ngrok on Google Colab.
+![Colab](https://img.shields.io/badge/Platform-Google%20Colab-orange?style=for-the-badge&logo=googlecolab)
 
----
-
-# Project Highlights
-
-- Wikipedia-powered retrieval system
-- Dense semantic embeddings using BGE
-- FAISS vector similarity search
-- Grounded answer generation using FLAN-T5
-- Interactive Streamlit web application
-- End-to-end RAG pipeline implementation
-- Evaluation using EM, F1, and Retrieval Hit Rate
+</p>
 
 ---
 
-# System Architecture
+# 📌 Project Overview
+
+This project implements a lightweight **Retrieval-Augmented Generation (RAG)** pipeline for open-domain question answering using:
+
+- 📚 Wikipedia Retrieval
+- 🧠 Dense Semantic Embeddings
+- 🔍 FAISS Vector Search
+- 🤖 FLAN-T5 Answer Generation
+- 🌐 Streamlit Deployment
+
+The system retrieves relevant context from Wikipedia and generates grounded factual answers using transformer-based language models.
+
+---
+
+# 🌐 Live Demo
+
+## 🔗 Streamlit Application
+
+👉 **[Launch RAG QA App](YOUR_STREAMLIT_LINK)**
+
+> ⚠️ Demo is hosted temporarily using Streamlit + ngrok on Google Colab.
+
+---
+
+# ✨ Features
+
+✅ Wikipedia-powered retrieval  
+✅ Dense semantic embeddings using BGE  
+✅ FAISS vector similarity search  
+✅ Grounded answer generation  
+✅ Streamlit interactive web app  
+✅ End-to-end RAG pipeline  
+✅ Evaluation metrics included  
+
+---
+
+# 🏗️ System Architecture
 
 ```text
 User Question
       ↓
-Wikipedia Retrieval
+📚 Wikipedia Retrieval
       ↓
-Text Chunking
+✂️ Text Chunking
       ↓
-BGE Embeddings
+🧠 BGE Embeddings
       ↓
-FAISS Vector Search
+🔍 FAISS Vector Search
       ↓
-Top Relevant Chunks
+📄 Top Relevant Chunks
       ↓
-FLAN-T5-base
+🤖 FLAN-T5-base
       ↓
-Generated Answer
+✅ Generated Answer
 ```
 
 ---
 
-# Models Used
+# 🤖 Models Used
 
 | Component | Model |
 |---|---|
-| Embedding Model | BAAI/bge-small-en-v1.5 |
-| Generation Model | google/flan-t5-base |
-| Vector Store | FAISS |
+| Embedding Model | `BAAI/bge-small-en-v1.5` |
+| Generation Model | `google/flan-t5-base` |
+| Vector Database | `FAISS` |
 
 ---
 
-# Technologies
+# 🛠️ Technologies Used
 
 - Python
 - HuggingFace Transformers
@@ -70,19 +96,19 @@ Generated Answer
 
 ---
 
-# Evaluation Results
+# 📊 Evaluation Results
 
-Evaluation performed on a subset of the Natural Questions (NQ) dataset.
+Evaluation performed on a subset of the **Natural Questions (NQ)** dataset.
 
 | Metric | Score |
 |---|---|
-| Exact Match (EM) | 0.10 |
-| F1 Score | 0.162 |
-| Retrieval Hit Rate | 0.34 |
+| 🎯 Exact Match (EM) | **0.10** |
+| 📈 F1 Score | **0.162** |
+| 🔍 Retrieval Hit Rate | **0.34** |
 
 ---
 
-# Key Observations
+# 🧠 Key Observations
 
 - The system produced grounded factual answers for many open-domain questions.
 - Qualitative performance was significantly stronger than Exact Match alone suggested.
@@ -91,28 +117,35 @@ Evaluation performed on a subset of the Natural Questions (NQ) dataset.
 
 ---
 
-# Example Questions
+# 💬 Example Questions
 
-- Who invented Python programming language?
-- Who wrote the Harry Potter series?
-- What is the capital of Australia?
-- Who discovered penicillin?
-- Where is the Great Barrier Reef located?
+```text
+Who invented Python programming language?
+
+Who wrote the Harry Potter series?
+
+What is the capital of Australia?
+
+Who discovered penicillin?
+
+Where is the Great Barrier Reef located?
+```
 
 ---
 
-# Streamlit Application
+# 🌐 Streamlit Application
 
 The project includes an interactive Streamlit-based interface that allows users to:
+
 - ask factual questions
 - retrieve relevant Wikipedia context
 - generate grounded answers in real time
 
 ---
 
-# Installation
+# ⚙️ Installation
 
-Install required dependencies:
+Install dependencies:
 
 ```bash
 pip install \
@@ -128,7 +161,7 @@ tqdm
 
 ---
 
-# Run Streamlit App
+# ▶️ Run Streamlit App
 
 ```bash
 streamlit run app.py
@@ -136,20 +169,20 @@ streamlit run app.py
 
 ---
 
-# Project Structure
+# 📂 Project Structure
 
 ```text
 project/
 │
-├── final_rag_pipeline_notebook.ipynb
-├── app.py
-├── README.md
-└── requirements.txt
+├── 📓 final_rag_pipeline_notebook.ipynb
+├── 🌐 app.py
+├── 📄 README.md
+└── 📦 requirements.txt
 ```
 
 ---
 
-# Challenges Faced
+# 🚧 Challenges Faced
 
 - Lightweight deployment constraints
 - Dynamic Wikipedia retrieval variability
@@ -158,7 +191,7 @@ project/
 
 ---
 
-# Future Improvements
+# 🚀 Future Improvements
 
 - Larger instruction-tuned LLMs
 - Better reranking pipelines
@@ -169,9 +202,10 @@ project/
 
 ---
 
-# Conclusion
+# ✅ Conclusion
 
 This project demonstrates a complete Retrieval-Augmented Generation workflow including:
+
 - semantic retrieval
 - dense embeddings
 - vector similarity search
@@ -180,13 +214,18 @@ This project demonstrates a complete Retrieval-Augmented Generation workflow inc
 - deployment
 
 The final system successfully balances:
-- lightweight infrastructure
-- qualitative QA performance
-- deployment simplicity
-- interactive usability
+
+✅ lightweight infrastructure  
+✅ qualitative QA performance  
+✅ deployment simplicity  
+✅ interactive usability  
 
 ---
 
-# Author
+# 👨‍💻 Author
 
-[Your Name]
+**[Jyoti Bhardwaj]**
+
+---
+
+# ⭐ If you found this project useful, consider giving it a star!
