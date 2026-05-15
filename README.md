@@ -41,7 +41,7 @@ FAISS Vector Search
       ↓
 Top Relevant Chunks
       ↓
-FLAN-T5-small
+FLAN-T5-base
       ↓
 Generated Answer
 ```
@@ -53,7 +53,7 @@ Generated Answer
 | Component | Model |
 |---|---|
 | Embedding Model | BAAI/bge-small-en-v1.5 |
-| Generation Model | google/flan-t5-small |
+| Generation Model | google/flan-t5-base |
 | Vector Store | FAISS |
 
 ---
