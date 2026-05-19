@@ -35,7 +35,7 @@ The system retrieves relevant context from Wikipedia and generates grounded fact
 ## 🔗 Streamlit Application
 
 👉 **[Launch RAG QA App](https://preachy-mustard-muck.ngrok-free.dev/)**
-
+> NOTE: To view the app run app.ipynb file on colab and click on the generated link.
 > ⚠️ Demo is hosted temporarily using Streamlit + ngrok on Google Colab because model was heavy and was not runnning on machine locally, the kernal was crashing.
 
 ---
